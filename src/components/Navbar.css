@@ -14,7 +14,7 @@ font-size: 2rem;
 }
 
 .navbar-list{
-    display: none;
+    display: flex;
     width: 100vw;
     margin-right: 2rem;
     align-items: center;
@@ -83,5 +83,7 @@ font-size: 1.5rem;
         font-size: 1.5rem;
         width: 100vw;
     }
-   
+    .navbar-list{
+        display: none;
+    }
   }

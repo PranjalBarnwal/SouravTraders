@@ -1,0 +1,89 @@
+.navbar{
+    display: flex;
+    width: 100vw;
+    padding: 5px;
+    background: rgb(39, 39, 39)
+    
+}
+.navbar-title{
+width: 20vw;
+color: aliceblue;
+margin-left: 2rem;
+cursor: pointer;
+font-size: 2rem;
+}
+
+.navbar-list{
+    display: none;
+    width: 100vw;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content:end ;
+    
+}
+.navbar-list>a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-left: 3rem;
+}
+.responsive-nav-parent{
+    display: none;
+
+    justify-content: end;
+    height: auto;
+    width: 100vw;
+    background-color: rgb(61, 78, 187);
+}
+
+.responsive-nav{
+    display: flex;
+    position: absolute;
+    right: -100%;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+.nav-toggle{
+    right:0;
+}
+.navbar-open{
+color: rgb(214, 202, 187);
+width: 100%;
+display: none;
+justify-content: end;
+align-items: center;
+font-size: 1.5rem;
+}
+.navbar-close{
+color: rgb(214, 202, 187);
+width: 100%;
+display: none;
+justify-content: end;
+align-items: center;
+font-size: 1.5rem;
+}
+
+.responsive-nav a{
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .responsive-nav-parent,.navbar-open,.navbar-close{
+        display: flex;
+    }
+    .navbar-title{
+        font-size: 1.5rem;
+        width: 100vw;
+    }
+    .navbar-list{
+        display: flex;
+    }
+  }

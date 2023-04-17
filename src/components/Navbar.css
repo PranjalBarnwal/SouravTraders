@@ -29,6 +29,10 @@ font-size: 2rem;
     font-size: 1.2rem;
     margin-left: 3rem;
 }
+
+.navbar-list>a:hover{
+   color: rgb(248, 248, 210);
+}
 .responsive-nav-parent{
     display: none;
 

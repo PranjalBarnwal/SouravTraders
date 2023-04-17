@@ -5,11 +5,13 @@ import Home2 from './components/Home2'
 const App = () => {
   return (
     <>
+    <div className='custom_bg'>
     <div className='App-Home1'>
      <Home/>
     </div>
     <div className='App-Home2'>
      
+    </div>
     </div>
     </>
   )

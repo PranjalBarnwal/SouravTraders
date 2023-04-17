@@ -1,12 +1,14 @@
 .navbar{
     display: flex;
     width: 100vw;
-    padding: 5px;
+    padding: 10px;
     background: rgb(39, 39, 39)
     
 }
 .navbar-title{
-width: 20vw;
+    
+width: 100vw;
+
 color: aliceblue;
 margin-left: 2rem;
 cursor: pointer;
@@ -24,7 +26,7 @@ font-size: 2rem;
 .navbar-list>a{
     color: aliceblue;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 3rem;
 }
 .responsive-nav-parent{
@@ -33,7 +35,7 @@ font-size: 2rem;
     justify-content: end;
     height: auto;
     width: 100vw;
-    background-color: rgb(61, 78, 187);
+    background-color: rgb(209, 209, 209);
 }
 
 .responsive-nav{
@@ -43,7 +45,7 @@ font-size: 2rem;
     align-items: center;
     flex-direction: column;
     width: 60vw;
-    background-color: aquamarine;
+    background-color: rgb(78, 78, 78);
     transition: 0.3s;
 }
 .nav-toggle{
@@ -70,7 +72,9 @@ font-size: 1.5rem;
     font-size: 1.5rem;
     border-bottom: 2px solid black;
     text-align: center;
+    color: rgb(235, 235, 235);
     text-decoration: none;
+    font-family: "Josefin Sans";
     width: 100%;
     padding: 1rem;
 }

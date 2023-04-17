@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <div className="navbar-title">Sourav Traders</div>
+        <div className="navbar-title font1">Sourav Traders</div>
 
         {toggle ? (
           <div className="navbar-close" onClick={navHandler}>
@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
         )}
 
-        <div className="navbar-list">
+        <div className="navbar-list font1">
           <a href="#">Home</a>
           <a href="#">Products</a>
           <a href="#">Reach Us</a>

@@ -1,0 +1,27 @@
+.cursor {
+  position: absolute;
+  width: 20px;
+  background: #c0a7a7;
+  border-radius: 50%;
+  z-index: 9999;
+  /* mix-blend-mode: difference; */
+  width: 5px;
+  height: 5px;
+  /* outline: 20px solid rgb(104, 75, 75); */
+}
+.cursor2 {
+  position: absolute;
+  /* width: 20px; */
+  /* background: #c0a7a7; */
+  border-radius: 50%;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgb(0, 17, 255);
+  /* outline: 20px solid rgb(104, 75, 75); */
+}
+
+*{
+  cursor: none;
+}

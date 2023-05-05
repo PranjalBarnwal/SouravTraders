@@ -1,12 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar{
     display: flex;
     width: 100vw;
     padding: 10px;
-    background: rgb(39, 39, 39)
+    background: rgba(39, 39, 39,0.7);
+    backdrop-filter: blur(10px);
+    
+    /* background-color: blue; */
     
 }
 .navbar-title{
-    
+  
 width: 100vw;
 
 color: aliceblue;
@@ -17,6 +26,7 @@ font-size: 2rem;
 
 .navbar-list{
     display: flex;
+    /* padding: 40px; */
     width: 100vw;
     margin-right: 2rem;
     align-items: center;

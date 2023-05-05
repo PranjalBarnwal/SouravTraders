@@ -1,11 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar'
-import HomeContainer from "./HomeContainer"
+import "./Home.css"
+import HomeContainer1 from "./HomeContainer1"
+import BrandContainer from './BrandContainer'
 const Home = () => {
   return (
-    <div>
+    <div className='home-body'>
+      <div className='nav-fixed'>
       <Navbar/>
-      <HomeContainer/>
+      </div>
+      <HomeContainer1/>
+      <BrandContainer/>
     </div>
   )
 }

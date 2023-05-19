@@ -1,0 +1,31 @@
+import granite from "./../assets/cards/granite.jpg";
+import cpvc from "./../assets/cards/cpvc.jpg";
+import mirror from "./../assets/cards/mirror.jpg";
+import pipes from "./../assets/cards/pipes.jpg";
+import tap from "./../assets/cards/tap.jpg";
+import tiles from "./../assets/cards/tiles.jpg";
+import toilet from "./../assets/cards/toilet.jpg";
+
+
+ <SwiperSlide>
+          <Card img={granite} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Card img={cpvc} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Card img={mirror} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Card img={pipes} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Card img={toilet} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Card img={tap} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Card img={tiles} />
+        </SwiperSlide>

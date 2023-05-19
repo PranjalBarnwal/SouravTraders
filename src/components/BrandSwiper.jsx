@@ -10,7 +10,6 @@ import toilet from "./../assets/cards/toilet.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "./Card"
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
@@ -59,10 +58,7 @@ export default function BrandSwiper() {
         <SwiperSlide>
           <Card img={toilet} />
         </SwiperSlide>
-         
-       
-       
-       
+    
       </Swiper>
     </>
   );

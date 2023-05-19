@@ -8,8 +8,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
+
+
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -33,7 +35,8 @@ background: rgb(47, 47, 48);
 
 .custom_bg{
     overflow-x: hidden;
-    background: radial-gradient(#5f5f5f 5%,rgb(49, 49, 49) 10%);
+    
+    background: radial-gradient(#5f5f5f 5%,rgb(49, 49, 49) 10%)!important;
     /* background: radial-gradient(rgb(41,51,86) 5%,#25282a 10%); */
     /* background: radial-gradient(#27333f 5%,#181c1f 10%); */
     background-size: 10px 10px;

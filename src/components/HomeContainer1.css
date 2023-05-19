@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     flex-direction: row;
 }
 
@@ -38,6 +39,7 @@
 }
 
 .scroll_down{
+    overflow-y: hidden;
     height: 35px;
     width: 25px;
     border: 2px solid rgb(160, 160, 160);

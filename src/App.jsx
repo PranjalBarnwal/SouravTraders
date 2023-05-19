@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./App.css";
+// import "./Cursor.css"
 import Home from "./components/Home";
-import Home2 from "./components/Home2";
+// import Home2 from "./components/Home2";
 import Cursor from "./Cursor";
-
 const App = () => {
+  
   return (
     <>
-        <Cursor />
+
+        <Cursor />  
       <div className="custom_bg">
         <div className="App-Home1">
-          <Home />
+          <Home  />
         </div>
         <div className="App-Home2"></div>
       </div>

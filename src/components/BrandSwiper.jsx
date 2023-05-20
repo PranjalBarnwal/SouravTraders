@@ -6,22 +6,23 @@ import pipes from "./../assets/cards/pipes.jpg";
 import tap from "./../assets/cards/tap.jpg";
 import tiles from "./../assets/cards/tiles.jpg";
 import toilet from "./../assets/cards/toilet.jpg";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import Card from "./Card"
+import urinal from "./../assets/cards/urinal.jpg";
+import Card from "./Card";
+import "./BrandSwiper.css";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-
-
-import "./BrandSwiper.css";
+import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 
 export default function BrandSwiper() {
   return (
-    <>
+    <div className="container-swiper">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -34,32 +35,56 @@ export default function BrandSwiper() {
           modifier: 2,
           slideShadows: true,
         }}
-      //  loop={"true"}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+        loop={"true"}
       >
-        <SwiperSlide>
-          <Card img={granite} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card img={cpvc} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card img={mirror} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card img={pipes} />
-        </SwiperSlide>
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination]}
+          className="mySwiper"
+          loop={"true"}
+        >
+          <SwiperSlide>
+            <img src={granite} />
+          </SwiperSlide>
 
-        <SwiperSlide>
-          <Card img={tap} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card img={tiles} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card img={toilet} />
-        </SwiperSlide>
-    
+          <SwiperSlide>
+            <img src={cpvc} />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <img src={mirror} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={tiles} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={urinal} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={tap} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={pipes} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={toilet} />
+          </SwiperSlide>
+        </Swiper>
       </Swiper>
-    </>
+    </div>
   );
 }

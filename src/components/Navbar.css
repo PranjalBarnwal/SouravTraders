@@ -16,7 +16,7 @@
 }
 .navbar-title{
   
-width: 100vw;
+min-width: 20rem;
 
 color: aliceblue;
 margin-left: 2rem;
